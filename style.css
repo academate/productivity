@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+    --blue: #3c486b;
+    --cream: #f0f0f0;
+    --yellow: #f9d949;
+    --orange: #f45050;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+}
+
+nav {
+    height: 40px;
+    background: var(--blue);
+    color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+.nav-link {
+    color: var(--yellow);
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    letter-spacing: 2.5px;
+}
+
+/* .hamburger {
+    cursor: pointer;
+} */
+
+/* .bar {
+    background: var(--yellow);
+    width: 27px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+} */
+
+/* .bar:nth-child(1).show {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.bar:nth-child(2).show {
+    opacity: 0;
+}
+
+.bar:nth-child(3).show {
+    transform: translateY(-8px) rotate(-45deg);
+} */
+
+section {
+    padding: 15px;
+}
+
+/* Breadcrumb styling starts here...... */
+.breadcrumbs {
+    display: inline-block;
+    background: var(--orange);
+    padding: 8px;
+    width: auto;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: 20px;
+    /* margin-top: 5px;
+    margin-left: 5px; */
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-link:hover {
+    border-bottom: 2px solid black;
+}
+/* Breadcrumb styling ends here....... */
+
+.heading {
+    text-align: center;
+    font-size: larger;
+}
+
+span {
+    /* font-family: 'Calligraffitti', cursive; */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.time-box {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 90px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: #f45050;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#hour, #minute, #second {
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer {
+    height: 40px;
+    background: var(--blue);
+    color: var(--yellow);
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .breadcrumbs {
+        margin-top: 0px;
+    }
+
+    .time-box {
+        display: none;
+    }
+}
