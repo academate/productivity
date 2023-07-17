@@ -2,179 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Productivity System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Productivity System</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider-content.css">
-    <style>
-        .heading {
-            text-align: center;
-            font-size: larger; /*same have added in style.css*/
-        }
 
-        span {
-            /* font-family: 'Calligraffitti', cursive; */
-            font-family: 'Dancing Script', cursive;
-            font-weight: bold;
-            font-size: 25px;
-            letter-spacing: 1.5px;
-        }
+    <style>
+        /* .underline-box {
+            max-width: 90px;
+            min-height: 4px;
+            background-color: var(--tertiary);
+            margin: 3px auto 10px auto;
+            border-radius: 7px;
+        } */
 
         .quote-box {
-            width: 95%;
+            width: 90%;
             margin: 15px auto;
             padding: 7px 15px;
-            /* border-left: 5px solid var(--peach); */
-            border-left: 5px solid var(--blue);
+            border-left: 5px solid var(--primary-white);
+            text-align: justify;
         }
 
         .slider {
+            display: flex;
+            overflow-x: auto;
             width: 95%;
             margin: 30px auto;
-            /* padding: 5px; */
-            /* border: 1px solid black; */
-            overflow-x: auto;
-            display: flex;
         }
 
         .slider::-webkit-scrollbar {
             display: none;
-            background: #f0f0f0;
+            /* background: #f0f0f0; */
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .box {
+        .slider-box {
             min-width: 270px;
             max-width: 275px;
             height: 350px;
-            /* border: 2px solid red; */
             margin-right: 20px;
-            padding: 10px;
-            background: #f45050;
-            background: #f9d949;
-            border-radius: 15px;
-        }
-
-        .img {
-            overflow: hidden;
-            width: 100%;
-            height: 85%;
-        }
-
-        img {
-            width: 100%;
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px;
-        }
-
-        .caption {
-            height: 15%;
             display: grid;
             place-items: center;
-            /* font-family: 'Calligraffitti', cursive; */
-            font-family: 'Dancing Script', cursive;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            font-size: 20px;
+            text-align: center;
+            border-radius: 15px;
+            border: 3px solid var(--primary-white);
+            /* font-family: 'Dancing Script', cursive; */
+            font-family: 'Lobster', cursive;
+            font-size: 25px;
+            background-color: var(--primary-white);
+            color: var(--main-black);
+            text-shadow: 5px 5px 2px var(--tertiary);
+        }
+
+        /* .slider-box-caption {
+            margin-top: 100px;
+        } */
+
+        .slider-box-underline {
+            width: 200px;
+            height: 5px;
+            background: var(--tertiary);
+            border-radius: 5px;
         }
 
         .other-productivity-links {
             width: 95%;
-            margin: 0px auto 10px auto;
+            margin: 25px auto 25px auto;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
         }
 
-        .mini-box {
+        .book-box {
             width: 300px;
-            background: #f45050;
             padding: 10px 10px;
             text-align: center;
             margin-bottom: 15px;
+            color: var(--primary-white);
+            border: 3px solid var(--primary-white);
+            /* background-color: var(--primary-white); */
             /* font-weight: bold; */
         }
 
-        #pop-up-area {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            place-items: center;
-            transform: translateY(-5000px);
-            visibility: hidden;
-            transition: all 1s ease-in-out;
+        .book-box:hover {
+            background-color: var(--primary-white);
+            color: var(--main-black);
         }
 
-        #pop-up-box {
-            width: 300px;
-            border: 3px solid black;
-            z-index: 10;
-            /* border-radius: 10px; */
-            background: black;
-            opacity: 1;
-        }
-
-        #pop-up-heading,
-        #pop-up-content {
-            padding: 10px;
-        }
-
-        #pop-up-heading {
-            background: #f45050;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* border-top-left-radius: 10px;
-            border-top-right-radius: 10px; */
-        } 
-
-        #greeting {
-            font-family: 'Dancing Script', cursive;
-            font-weight: bold;
-            font-size: 22px;
-        }
-
-        #pop-up-content {
-            background-color: #f9d949;
-            /* border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px; */
-        }
-
-        .bar {
-            background: black;
-            width: 27px;
-            height: 3px;
-            border-radius: 5px;
-            /* margin-top: 5px;
-            margin-bottom: ; */
-            /* transition: all 0.3s ease-in-out; */
-        }
-
-        .bar:nth-child(1) {
-            transform: translateY(4px) rotate(45deg);
-        }
-
-        .bar:nth-child(2) {
-            margin-top: 5px;
-            transform: translateY(-4px) rotate(-45deg);
-        }
-
-        .close-btn {
-            cursor: pointer;
-            scale: 0.8;
+        @media (min-width: 1000px) {
+            .quote-box {
+                width: 95%;
+            }
         }
 
         @media (min-width: 786px) {
@@ -188,129 +106,65 @@
                 margin-bottom: 15px;
                 margin-right: 0px;
             }
-
-            #pop-up-box {
-                scale: 1.2;
-            }
         }
     </style>
 </head>
 <body>
-    <nav style="visibility: hidden;">
-        <div class="logo">
-            AcadeMate
-        </div>
-        <!-- <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div> -->
-        <div class="cur-page">Home</div>
+    <nav>
+        <div class="logo">AcadeMate</div>
+        <div class="nav-link"></div>
     </nav>
 
-    <div id="exam-page">
-    </div>
-
-    <div class="time-box" style="visibility: hidden;">
-        <div id="hour"></div>:
-        <div id="minute"></div>:
-        <div id="second"></div>
-    </div>
-
-    <div id="pop-up-area">
-        <div id="pop-up-box">
-            <div id="pop-up-heading">
-                <div id="greeting">Dear user,</div>
-                <div class="close-btn">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <div id="pop-up-content">
-                Thank you for using this site. Any suggestions or queries? 
-                <br><a href="mailto:vigneshsundraniedwo@gmail.com">Click here to reach out to me</a>
-            </div>
-        </div>
-    </div>
-
     <section>
-        <div class="heading" style="visibility: hidden;">Welcome to the <span>College Productivity System</span></div>
+        <div class="section-heading">The College Productivity System</div>
+        <div class="underline-box"></div>
 
         <div class="quote-box"></div>
 
-        <div class="slider" style="visibility: hidden;">
-            <a href="semOne.html"><div class="box">
-                <div class="img">
-                    <img src="images/img1.png" alt="">
-                </div>
-                <div class="caption">
-                    Semester 1
-                </div>
-            </div></a>
-            
-            <a href="#"><div class="box">
-                <div class="img">
-                    <img src="images/img2.jpg" alt="">
-                </div>
-                <div class="caption">
-                    Semester 2
-                </div>
+        <div class="slider">
+            <a href="#"><div class="slider-box">
+                <div class="slider-box-underline"></div>
+                <div class="slider-box-caption">Semester<br>1</div>
+                <div class="slider-box-underline"></div>
             </div></a>
 
-            <a href="#"><div class="box">
-                <div class="img">
-                    <img src="images/img3.webp" alt="">
-                </div>
-                <div class="caption">
-                    Semester 3
-                </div>
+            <a href="#"><div class="slider-box">
+                <div class="slider-box-underline"></div>
+                <div class="slider-box-caption">Semester<br>2</div>
+                <div class="slider-box-underline"></div>
             </div></a>
 
-            <a href="semfour.html"><div class="box" style="margin-right: 0px;">
-                <div class="img">
-                    <img src="images/img4.jpg" alt="">
-                </div>
-                <div class="caption">
-                    Semester 4
-                </div>
+            <a href="#"><div class="slider-box">
+                <div class="slider-box-underline"></div>
+                <div class="slider-box-caption">Semester<br>3</div>
+                <div class="slider-box-underline"></div>
+            </div></a>
+
+            <a href="semester-four.html"><div class="slider-box" style="margin-right: 0px;">
+                <div class="slider-box-underline"></div>
+                <div class="slider-box-caption">Semester<br>4</div>
+                <div class="slider-box-underline"></div>
             </div></a>
         </div>
 
-        <div class="heading" style="text-decoration: underline; visibility: hidden;">Summary of some good <span>books</span>:<br><br></div>
-        <div class="other-productivity-links" style="visibility: hidden;">
+        <div class="section-heading">Book Summary</div>
+        <div class="underline-box"></div>
+        <div class="other-productivity-links">
             <a href="https://ringed-meter-575.notion.site/The-5-AM-Club-e93d29607df34a16bfe39f39a8378ecc">
-                <div class="mini-box">
-                    The 5 AM Club<br>Robin Sharma
-                </div>
-            </a>
+                <div class="book-box">The 5AM Club <br>Robin Sharma</div></a>
 
             <a href="#">
-                <div class="mini-box">
-                    Atomic Habits<br>James Clear
-                </div>
-            </a>
+                <div class="book-box">Atomic Habits<br>James Clear</div></a>
 
             <a href="#">
-                <div class="mini-box">
-                    Think Like a Monk<br>Jay Shetty
-                </div>
-            </a>
+                <div class="book-box">Think Like a Monk<br>Jay Shetty</div></a>
 
             <a href="https://rb.gy/hlrnc">
-                <div class="mini-box">
-                    The Psychology of Money<br>Morgan Housel
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="mini-box">
-                    Rich Dad, Poor Dad<br>
-                </div>
-            </a>
+                <div class="book-box">The Psychology of Money<br>Morgan Housel</div></a>
         </div>
     </section>
 
-    <footer style="visibility: hidden;">
+    <footer>
         <div class="copywrite-text"></div>
     </footer>
     <script>
@@ -332,61 +186,6 @@
             quoteBox.innerHTML = randomQuote;
         }
         quoteFunction();
-
-        let popUpArea = document.getElementById("pop-up-area");
-
-        setTimeout(() => {
-            popUpArea.style.transform = "translateY(0px)";
-            popUpArea.style.visibility = "visible";
-        }, 7100);
-
-        let closeBtn = document.getElementsByClassName("close-btn")[0];
-        closeBtn.addEventListener("click", () => {
-            popUpArea.style.transform = "translateY(-5000px)";
-            popUpArea.style.visibility = "hidden";
-            // popUpArea.style.display = "none";
-            // popUpArea.style.zIndex = -11;
-        });
-
-        // Focusing on quote area code begins here
-
-        let navEle = document.getElementsByTagName("nav")[0];
-        let timeArea = document.getElementsByClassName("time-box")[0];
-        let headingArea = document.getElementsByClassName("heading")[0];
-        let headingAreaTwo = document.getElementsByClassName("heading")[1];
-        let sliderArea = document.getElementsByClassName("slider")[0];
-        let bookArea = document.getElementsByClassName("other-productivity-links")[0];
-        let footerEle = document.getElementsByTagName("footer")[0];
-
-        setTimeout(() => {
-            navEle.style.visibility =  "visible";
-        }, 5000);
-
-        setTimeout(() => {
-            timeArea.style.visibility = "visible";
-        }, 5300);
-
-        setTimeout(() => {
-            headingArea.style.visibility = "visible";
-        }, 5600);
-
-        setTimeout(() => {
-            sliderArea.style.visibility = "visible";
-        }, 5900);
-
-        setTimeout(() => {
-            headingAreaTwo.style.visibility = "visible";
-        }, 6200);
-
-        setTimeout(() => {
-            bookArea.style.visibility = "visible";
-        }, 6500);
-
-        setTimeout(() => {
-            footerEle.style.visibility = "visible";
-        }, 6800);
-
-        //Focusing on quote area code ends here
     </script>
     <script src="script.js"></script>
 </body>
