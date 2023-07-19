@@ -24,7 +24,7 @@
         }
 
         .underline-box {
-            width: 40px;
+            max-width: 40px;
         }
 
         .subject-box {
@@ -32,17 +32,18 @@
             border: 2px solid var(--primary-white);
             color: var(--primary-white);
             margin: 20px 25px;
+            font-style: normal;
             display: grid;
             place-items: center;
             font-size: 20px;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.1s ease-in-out;
         }
 
         .subject-box:hover {
-            /* background-color: var(--primary-white);
+            background-color: var(--primary-white);
             color: var(--main-black);
-            border-color: var(--primary-white); */
-            scale: 1.07;
+            border-color: var(--primary-white);
+            /* scale: 1.07; */
         }
 
         .course-details-section {
@@ -51,11 +52,14 @@
         }
 
         .details-heading {
-            font-weight: bold;
+            /* font-weight: bold; */
             letter-spacing: 1.5px;
+            font-size: 20px;
+            /* font-family: 'Dancing Script', cursive; */
+            font-family: 'Lobster', cursive;
         }
 
-        .multipurpose-btn {
+        /* .multipurpose-btn {
             background-color: var(--tertiary);
             padding: 5px 15px;
             border-radius: 10px;
@@ -66,6 +70,27 @@
             margin-top: 5px;
             cursor: pointer;
             font-size: 15px;
+        } */
+
+        .multipurpose-btn {
+            background: #FBCA1F;
+            font-family: inherit;
+            padding: 0.6em 1.3em;
+            font-weight: 900;
+            font-size: 14px;
+            border: 3px solid black;
+            border-radius: 0.4em;
+            box-shadow: 0.1em 0.1em;
+        }
+          
+        .multipurpose-btn:hover {
+            transform: translate(-0.05em, -0.05em);
+            box-shadow: 0.15em 0.15em;
+        }
+          
+        .multipurpose-btn:active {
+            transform: translate(0.05em, 0.05em);
+            box-shadow: 0.05em 0.05em;
         }
 
         @media (max-width: 768px) {
