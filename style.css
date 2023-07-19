@@ -41,11 +41,13 @@ nav {
 }
 
 .underline-box {
+    width: 0px;
     max-width: 90px;
     min-height: 4px;
     background-color: var(--tertiary);
     margin: 3px auto 10px auto;
     border-radius: 7px;
+    animation: text-underline 2s ease-in-out 0.5s forwards;
 }
 
 a {
@@ -62,11 +64,23 @@ footer {
     text-align: center;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--primary-white);
+@keyframes text-underline {
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--tertiary);
-}
+
 
