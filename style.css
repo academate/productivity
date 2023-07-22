@@ -35,6 +35,31 @@ nav {
     color: var(--tertiary);
 }
 
+.breadcrumbs {
+    border: 1px solid var(--primary-white);
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: var(--primary-white);
+    color: var(--main-black);
+    margin-bottom: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.breadcrumb-link {
+    color: var(--main-black);
+}
+
+.breadcrumb-link:hover {
+    border-bottom: 2px solid var(--main-black);
+}
+
+/* .current-page {
+    background: var(--primary-white);
+    color: var(--main-black);
+} */
+
 .section-heading {
     text-align: center;
     font-size: 20px;
