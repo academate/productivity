@@ -23,6 +23,10 @@
             text-align: justify;
         }
 
+        .quote-box b {
+            letter-spacing: 1.3px;
+        }
+
         .slider {
             display: flex;
             overflow-x: auto;
@@ -131,13 +135,15 @@
             .quote-box {
                 max-width: 85%;
             }
-        }
 
-        @media (min-width: 786px) {
-            .slider-box {
-                margin-bottom: 20px;
+            .slider-box:nth-child(5) {
+                margin-right: 0px;
             }
         }
+
+        /* @media (min-width: 786px) {
+            
+        } */
     </style>
 </head>
 <body>
@@ -215,8 +221,10 @@
                     "\"<i>The life given us, by nature is short, but the memory of a well-spent life is eternal</i>.\" — <b>Cicero</b>", "\"<i>The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart</i>.\" — <b>Helen Keller</b>", 
                     "\"<i>Spending money to show people how much money you have is the fastest way to have less money</i>.\" - <b>The Psychology of Money</b>", "\"<i>No matter how busy you may think you are, you must find time for reading, or surrender yourself to self-chosen ignorance</i>.\"", 
                     "\"<i>Controlling your time is the highest dividend money pays</i>.\"", "\"<i>Your personal experiences with money make up maybe 0.00000001% of what's happened in the world, but maybe 80% of how you think the world works</i>.\"", "\"<i>Good investing is not necessarily about making good decisions. It's about consistently not screwing up</i>.\"",
-                    "\"<i>Spending money to show people how much money you have is the fastest way to have less money</i>.\"", "\"<i>The most important part of every plan is planning on your plan not going according to plan</i>.\"", "\"<i>Everything has a price, but not all prices appear on labels</i>.\""];
-            let quoteBox = document.getElementsByClassName("quote-box")[0];
+                    "\"<i>Spending money to show people how much money you have is the fastest way to have less money</i>.\"", "\"<i>The most important part of every plan is planning on your plan not going according to plan</i>.\"", "\"<i>Everything has a price, but not all prices appear on labels</i>.\"",
+                    "\"<i>You cannot escape the responsibility of tomorrow by evading it today</i>\" - <b>Abraham Lincoln</b>", "\"<i>Work on it TODAY, not tomorrow</i>\""];
+            
+                    let quoteBox = document.getElementsByClassName("quote-box")[0];
 
             let randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
             
