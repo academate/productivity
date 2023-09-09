@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* .underline-box {
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');        /* .underline-box {
             max-width: 90px;
             min-height: 4px;
             background-color: var(--tertiary);
@@ -31,7 +31,7 @@
             display: flex;
             overflow-x: auto;
             width: 90%;
-            margin: 35px auto;
+            margin: 0px auto; /* was 35px for top and bottom */
             padding: 50px 20px;
             background: var(--main-black);
         }
@@ -41,24 +41,6 @@
             /* background: #f0f0f0; */
         }
 
-        /* .slider-box {
-            min-width: 270px;
-            max-width: 275px;
-            height: 350px;
-            margin-right: 20px;
-            display: grid;
-            place-items: center;
-            text-align: center;
-            border-radius: 15px;
-            border: 3px solid var(--primary-white);
-            /* font-family: 'Dancing Script', cursive; */
-            /* font-family: 'Lobster', cursive;
-            font-size: 25px;
-            background-color: var(--primary-white);
-            color: var(--main-black);
-            text-shadow: 5px 5px 2px var(--tertiary);
-        } */
-
         .slider-box {
             /* width: 190px;
             height: 254px; */
@@ -66,6 +48,7 @@
             max-width: 275px;
             height: 350px;
             margin-right: 40px;
+            margin-bottom: 20px; /*changes here*/
             display: grid;
             place-items: center;
             text-align: center;
@@ -97,20 +80,26 @@
         }
 
         .book-box {
-            width: 300px;
+            width: 350px;
             padding: 10px 10px;
             text-align: center;
             margin-bottom: 15px;
             color: var(--primary-white);
             border: 3px solid var(--primary-white);
-            /* background-color: var(--primary-white); */
-            /* font-weight: bold; */
+            font-family: 'Special Elite', cursive;
+            line-height: 22px;
+            letter-spacing: 1.2px;
         }
 
         .book-box:hover {
             background-color: var(--primary-white);
             color: var(--main-black);
+            font-weight: bold;
         }
+
+        /* .author-name {
+            font-family: 'Special Elite', cursive;
+        } */
 
         @media (min-width: 1000px) {
             .quote-box {
@@ -187,16 +176,16 @@
         <div class="underline-box"></div>
         <div class="other-productivity-links">
             <a href="https://ringed-meter-575.notion.site/The-5-AM-Club-e93d29607df34a16bfe39f39a8378ecc">
-                <div class="book-box">~ The 5AM Club ~ <br>Robin Sharma</div></a>
+                <div class="book-box">The 5AM Club<br><span class="author-name">Robin Sharma</span></div></a>
 
             <a href="#">
-                <div class="book-box">~ Atomic Habits ~<br>James Clear</div></a>
+                <div class="book-box">Atomic Habits<br><span class="author-name">James Clear</span></div></a>
 
             <a href="#">
-                <div class="book-box">~ Think Like a Monk ~<br>Jay Shetty</div></a>
+                <div class="book-box">Think Like a Monk<br><span class="author-name">Jay Shetty</span></div></a>
 
             <a href="https://rb.gy/hlrnc">
-                <div class="book-box">~ The Psychology of Money ~<br>Morgan Housel</div></a>
+                <div class="book-box">The Psychology of Money<br><span class="author-name">Morgan Housel</span></div></a>
         </div>
     </section>
 
