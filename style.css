@@ -21,7 +21,7 @@ body {
 nav {
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
@@ -60,6 +60,18 @@ nav {
     color: var(--main-black);
 } */
 
+/* .quote-box {
+    width: 90%;
+    margin: 15px auto;
+    padding: 7px 15px;
+    border-left: 5px solid var(--primary-white);
+    text-align: justify;
+}
+
+.quote-box b {
+    letter-spacing: 1.3px;
+} */
+
 .section-heading {
     text-align: center;
     font-size: 20px;
@@ -88,6 +100,12 @@ footer {
     place-items: center;
     text-align: center;
 }
+
+/* @media (max-width: 786px) {
+    .quote-box {
+        max-width: 85%;
+    }
+} */
 
 @keyframes text-underline {
     25% {
