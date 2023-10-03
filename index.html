@@ -18,7 +18,7 @@
         } */
 
         .pop-up {
-            z-index: 9999;
+            z-index: 9000;
             width: 100%;
             height: 100%;
             position: fixed;
@@ -221,6 +221,17 @@
     </style>
 </head>
 <body onload="randomQuoteFun();">
+    <div class="loader-page">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
     <div class="pop-up">
         <div class="message-box">
             <div class="message-heading">
@@ -304,11 +315,11 @@
         // if (popUpBoxCount == 0) {
             setTimeout(() => {
                 popUpBox.style.transform = "translateY(0px)";
-            }, 1500);
+            }, 1700);
 
             setTimeout(() => {
                 messageArea.style.display = "block";
-            }, 2350);
+            }, 2530);
         // }
 
         
