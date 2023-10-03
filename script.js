@@ -20,4 +20,11 @@ window.addEventListener("scroll", () => {
     } else {
         toTop.classList.remove("active");
     }
-})
+});
+
+//Loader page
+const loaderPage = document.getElementsByClassName("loader-page")[0];
+
+setTimeout(() => {
+    loaderPage.style.display = "none";
+}, 1520);
