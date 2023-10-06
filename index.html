@@ -316,7 +316,10 @@
         let popUpBox = document.getElementsByClassName("pop-up")[0];
         let messageArea = document.getElementsByClassName("the-message")[0];
 
+        let shownOnce = sessionStorage.getItem("messageShown");
+
         // if (popUpBoxCount == 0) {
+        if (shownOnce != "yes") {
             setTimeout(() => {
                 popUpBox.style.transform = "translateY(0px)";
             }, 1700);
@@ -324,7 +327,10 @@
             setTimeout(() => {
                 messageArea.style.display = "block";
             }, 2530);
+
+            sessionStorage.setItem("messageShown", "yes");
         // }
+        }
 
         
         let closeBtn = document.getElementsByClassName("close-icon")[0];
@@ -335,8 +341,6 @@
                 popUpBox.style.transform = "translateY(-5000px)";
             }, 200);
         });
-
-        // console.log(popUpBoxCount);
     </script>
 </body>
 </html>
