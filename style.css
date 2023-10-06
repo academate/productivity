@@ -154,7 +154,7 @@ nav {
     background-color: var(--primary-white);
     color: var(--main-black);
     margin-bottom: 15px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -277,5 +277,5 @@ footer {
     width: 87%;
     border: 2px solid var(--primary-white);
     border-radius: 10px;
-    margin: auto;
+    margin: 0px auto 15px auto;
 }
