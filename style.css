@@ -240,6 +240,30 @@ footer {
     text-align: center;
 }
 
+.other-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.to-app,
+.to-learn-programming {
+  flex: 1;
+  text-align: center;
+}
+
+.to-app a, 
+.to-learn-programming a {
+  /* text-decoration: underline; */
+  transition: all 0.6;
+}
+
+.to-learn-programming a:hover,
+.to-app a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 500px) {
     .to-top {
         scale: 0.8;
