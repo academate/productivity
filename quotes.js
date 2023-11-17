@@ -7,7 +7,8 @@ const randomQuoteFun = () => {
                                         "\"<i>Good investing is not necessarily about making good decisions. It's about consistently not screwing up</i>.\"",
                                         "\"<i>Men often become what they believe themselves to be. If I believe I cannot do something, it makes me incapable of doing it. But when I believe I can, then I acquire the ability to do it even if I didn\'t have it in the beginning</i>.\"",
                                         "<i>A wise old owl lived in an oak,<br>The more he saw the less he spoke,<br>The less he spoke, the more he heard,<br>Why aren't we all like the wise old bird?</i>",
-                                        "\"<i>Gold laboureth diligently and contentedly for the wise owner who finds for it profitable employment, multiplying even as the flocks of the field</i>.\"<br><br><b>The Second Law of Gold</b> (The Richest Man in Babylon - George S. Clason)"],
+                                        "\"<i>Gold laboureth diligently and contentedly for the wise owner who finds for it profitable employment, multiplying even as the flocks of the field</i>.\"<br><br><b>The Second Law of Gold</b> (The Richest Man in Babylon - George S. Clason)",
+                                        "\"<i>The desire for more positive experience is itself a negative experience. And, paradoxically, the acceptance of one's negative experience is itself a positive experience</i>.\""],
                     
                     "quoteArrTwo" : ["\"<i>The ignorant work for their own profit… the wise work for the welfare of the world…</i>\"<br><br><b>Bhagavad Gita, 3:25</b>",
                                         "\"<i>Do not live as if you have ten thousand years left. Your fate hangs over you. While you are still living, while you still exist on this Earth, strive to become a genuinely great person.</i>\"<br><br><b>Marcus Aurelius, Roman emperor</b>",
