@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Productivity System
+    </title>
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/index-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300">
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="#" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="#" class="px-4 py-1 bg-white text-black rounded-md">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="./semester-thre.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-2.5">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 h-1 md:w-9 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-end mt-14">
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="px-2.5 md:px-20 xl:px-44 my-72 md:my-60 intro">
+        <div class="font-bold text-xl md:text-3xl xl:text-5xl text-center">
+            Welcome to <span class="academate">AcadeMate</span>,<br> your personal College Productivity System.
+        </div>
+        <div class="intro-details-section mt-2.5 text-xs md:text-lg xl:text-xl text-center">
+            Find notes, programs, question papers and other study related things, all in one place.
+        </div>
+    </section>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+    </script>
+</body>
+</html>
