@@ -13,7 +13,6 @@ window.addEventListener("scroll", () => {
 });
 
 const navBarFun = (toShowOrNot) => {
-    console.log("Called");
     let secondaryNavMenu = document.getElementById("secondary-nav-links");
 
     if (toShowOrNot == true) {
@@ -24,3 +23,30 @@ const navBarFun = (toShowOrNot) => {
         secondaryNavMenu.style.transform = "translateX(24rem)";
     }
 }
+
+//theme change
+let theme = localStorage.getItem("theme");
+let themeChangeCheckbox = document.getElementsByClassName("checkbox")[0];
+
+const themeFunction = () => {
+    let htmlElement = document.documentElement;
+
+    htmlElement.classList.toggle("dark");
+}
+
+if (theme == "light") {
+    themeFunction();
+    themeChangeCheckbox.checked = true;
+}
+
+themeChangeCheckbox.addEventListener("change", () => {
+
+    if (themeChangeCheckbox.checked) {
+        localStorage.setItem("theme", "light");
+    } else {
+        localStorage.setItem("theme", "dark");
+    }
+
+    themeFunction();
+
+});

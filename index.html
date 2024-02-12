@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,20 @@
     </title>
     <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="icons/index-icon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-black text-white">
-    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300">
+<body class="bg-white text-black dark:bg-black dark:text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-black dark:bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300">
 
         <div id="close-icon" class="mt-2.5 ml-2.5">
-            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer hidden dark:block" onclick="navBarFun(false);">
+            <img src="./icons/icons8-close-50_white.png" alt="" class="w-9 h-9 cursor-pointer block dark:hidden" onclick="navBarFun(false);">
         </div>
 
-        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
-            <a href="#" class="px-6 py-1 w-full bg-black text-white rounded-md">
+        <div id="nav-links-two" class="text-2xl text-white dark:text-black text-center uppercase my-5">
+            <a href="#" class="px-6 py-1 w-full bg-white text-black dark:bg-black dark:text-white rounded-md">
                 Home
             </a>
             <a href="./semester-one.html" class="px-6 py-1 inline-block">
@@ -40,24 +42,24 @@
     </div>
 
     <header>
-        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-white dark:bg-black">
             <div id="logo" class="text-3xl mt-1.5">
                 AcadeMate
             </div>
 
             <div id="nav-links" class="text-lg hidden xl:block uppercase">
-                <a href="#" class="px-4 py-1 bg-white text-black rounded-md">Home</a>
+                <a href="#" class="px-4 py-1 text-white bg-black dark:bg-white dark:text-black rounded-md">Home</a>
                 <a href="./semester-one.html" class="px-2.5">Sem 1</a>
                 <a href="./semester-two.html" class="px-2.5">Sem 2</a>
-                <a href="./semester-thre.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
                 <a href="./semester-four.html" class="px-2.5">Sem 4</a>
                 <a href="./semester-five.html" class="px-2.5">Sem 5</a>
             </div>
 
             <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
-                <div class="bar w-8 h-1 md:w-9 bg-white my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 h-1 md:w-9 bg-black dark:bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-black dark:bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-black dark:bg-white my-1"></div>
             </div>
         </nav>
     </header>

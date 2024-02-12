@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,22 @@
 
     <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="icons/sem-one-icon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./output.css">
+    
 </head>
-<body class="bg-black text-white">
-    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+<body class="bg-white text-black dark:bg-black dark:text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-black dark:bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
 
         <div id="close-icon" class="mt-2.5 ml-2.5">
-            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer hidden dark:block" onclick="navBarFun(false);">
+            <img src="./icons/icons8-close-50_white.png" alt="" class="w-9 h-9 cursor-pointer block dark:hidden" onclick="navBarFun(false);">
         </div>
 
-        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+        <div id="nav-links-two" class="text-2xl text-white dark:text-black text-center uppercase my-5">
             <a href="./index.html" class="px-6 py-1 w-full inline-block">
                 Home
             </a>
-            <a href="./semester-one.html" class="px-6 py-1 bg-black text-white rounded-md">
+            <a href="./semester-one.html" class="px-6 py-1 bg-white text-black dark:bg-black dark:text-white rounded-md">
                 Sem 1
             </a>
             <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
@@ -40,14 +41,14 @@
     </div>
 
     <header>
-        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-white dark:bg-black">
             <div id="logo" class="text-3xl mt-1.5">
                 AcadeMate
             </div>
 
             <div id="nav-links" class="text-lg hidden xl:block uppercase">
                 <a href="./index.html" class="px-2.5">Home</a>
-                <a href="./semester-one.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 1</a>
+                <a href="./semester-one.html" class="px-4 py-1 text-white bg-black dark:bg-white dark:text-black rounded-md">Sem 1</a>
                 <a href="./semester-two.html" class="px-2.5">Sem 2</a>
                 <a href="./semester-three.html" class="px-2.5">Sem 3</a>
                 <a href="./semester-four.html" class="px-2.5">Sem 4</a>
@@ -55,15 +56,15 @@
             </div>
 
             <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
-                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-black dark:bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-black dark:bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-black dark:bg-white my-1"></div>
             </div>
         </nav>
     </header>
 
     <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
-        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-one.html">SEM 1</a> / C Programming</div>
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-one.html" class="hover:italic">SEM 1</a> / C Programming</div>
         <div class="toggle-switch">
             <label class="switch-label">
               <input type="checkbox" class="checkbox">
@@ -85,71 +86,71 @@
             <div id="subject-list-box py-5">
                 <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    1. <a href="https://ringed-meter-575.notion.site/Question-1-6137b3b0ed2944bf87f85047da6e332c?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-6137b3b0ed2944bf87f85047da6e332c?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Largest of three numbers</a>.
                 </div>
                 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    2. <a href="https://ringed-meter-575.notion.site/Question-2-a6887363cf294379a2ddda7637d95755?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-a6887363cf294379a2ddda7637d95755?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         N Fibonacci series</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    3. <a href="https://ringed-meter-575.notion.site/Question-3-c4534216ca8b4eb6ab05507007c6fdc6?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-c4534216ca8b4eb6ab05507007c6fdc6?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Tax rate and gross salary of an employee</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    4. <a href="https://ringed-meter-575.notion.site/Question-4-f8d71c14b7744a318a8a1d6490c30f05?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-f8d71c14b7744a318a8a1d6490c30f05?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Reverse a number and find the sum of individual digits and also check for palindrome</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    5. <a href="https://ringed-meter-575.notion.site/Question-5-d02079ac3beb474387724fe87b5168b1?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-d02079ac3beb474387724fe87b5168b1?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         LCM and GCD</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    6. <a href="https://ringed-meter-575.notion.site/Question-6-1a6eb4b9581c477e9e48340b15d20e45?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-1a6eb4b9581c477e9e48340b15d20e45?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         To check if a number is prime or not</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    7. <a href="https://ringed-meter-575.notion.site/Question-7-79b908ccc6bd40529c62c8e463d18cd2?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-79b908ccc6bd40529c62c8e463d18cd2?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Convert decimal number to binary equivalent</a>.
                 </div>
                 <br><br><br>
 
                 <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    1. <a href="https://ringed-meter-575.notion.site/Question-1-b4212f340c70453f8b38707537ccda74?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-b4212f340c70453f8b38707537ccda74?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Sum and average of numbers in an array</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    2. <a href="https://ringed-meter-575.notion.site/Question-2-6eb07053dd254096a5fb8e931555a730?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-6eb07053dd254096a5fb8e931555a730?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Largest and smallest number in an array</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    3. <a href="https://ringed-meter-575.notion.site/Question-3-fc533fc0bfd446aeb811a35ab05496f3?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-fc533fc0bfd446aeb811a35ab05496f3?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Transpose of a matrix and also to check the symmetry of the matrix</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    4. <a href="https://ringed-meter-575.notion.site/Question-4-7ef72af89a034415b8f47fbaa031e1cf?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-7ef72af89a034415b8f47fbaa031e1cf?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Multiplication of two matrices</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    5. <a href="https://ringed-meter-575.notion.site/Question-5-351a98031f674378aedf1ec9403a8244?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-351a98031f674378aedf1ec9403a8244?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         To check if a string is palindrome or not</a>.
                 </div>
 
-                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
-                    6. <a href="https://ringed-meter-575.notion.site/Question-6-5d5a15740855419185618745bc03ef30?pvs=4" class="hover:border-b-2 hover:italic">
+                <div class="w-5/6 mx-auto my-2 border-2 border-black dark:border-white py-3 px-4 text-base text-left">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-5d5a15740855419185618745bc03ef30?pvs=4" class="hover:border-b-2 hover:italic border-black dark:border-white">
                         Factorial of first 'n' integers using recursion</a>.
                 </div>
             </div>
